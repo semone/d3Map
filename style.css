@@ -1,0 +1,52 @@
+
+
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%
+    position:fixed;
+}
+
+#content {
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    min-height: 600px;
+    min-width:900px;
+    background-color: #cfffd3;
+    float: left
+}
+
+#sidebar{
+    background-color:#ffb6a9;
+    width:30%;
+    min-width: 200px;
+    height: 100%;
+    min-height: 600px;
+    position: absolute;
+    right: 0;
+}
+
+.text{
+    padding-left: 10px;
+}
+
+
+.states {
+    fill:#fffc8d;
+    stroke: #222;
+}
+
+.mouseover{
+    fill:#ff4631;
+}
+
+@media screen and (max-width: 1300px) {
+    #sidebar {
+        display: none !important;
+    }
+    #content{
+        width:100%;
+    }
+}
