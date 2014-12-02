@@ -104,7 +104,7 @@ function newStateCheck(data){
                 //A little cheat for me. 
                 //d3.select('#path' + stateNumber)
                 //    .attr('class', 'states mouseover');  
-                //}
+                }
              });
             //Check which state the user clicks 
             checkStateClick(stateNumber, data);
