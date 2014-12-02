@@ -5,41 +5,89 @@ html, body {
     margin:0;
     padding:0;
     height:100%
-    position:fixed;
+}
+#main{
+    /*overflow:auto;*/
+    width: 100%;
+    position: relative;
+    min-height: 650 px;
+
 }
 
 #content {
-    position: fixed;
     width: 70%;
-    height: 100%;
-    min-height: 600px;
+    height: 100vh;
+    min-height: 650px;
     min-width:900px;
-    background-color: #cfffd3;
+    background-color: #eef4d9;
     float: left
 }
 
 #sidebar{
-    background-color:#ffb6a9;
-    width:30%;
+/*    background-color:#ffb6a9;
+*/    width:30%;
     min-width: 200px;
-    height: 100%;
-    min-height: 600px;
+    height: 100vh;
+    min-height: 650px;
     position: absolute;
     right: 0;
+    text-align: center;
+    font-family: "News Cycle","Arial Narrow",sans-serif;
+    border-style:solid;
+    border-width: 0 0 0 2px;
+    border-color:#e4887e;
+
 }
 
+.button {
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 12px;
+    display: inline-block;
+    color: #fafafa;
+    text-decoration: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    text-decoration: none;
+    font-size: 24px;
+    background: #cc7a6f;
+    color: #fafafa;
+    cursor:pointer;
+}
+
+.button:hover {
+    background: #e4887e;
+}
+
+.hide{
+    display: none;
+}
+
+#sidebar h1{
+    margin-top:1em;
+}
 .text{
-    padding-left: 10px;
+/*    padding-left: 10px;
+*/}
+
+#stateToClick{
+    margin-top:2em;
 }
 
 
 .states {
-    fill:#fffc8d;
+    fill:#fffeb6;
     stroke: #222;
+    cursor:pointer;
 }
 
 .mouseover{
-    fill:#ff4631;
+    fill:#f7e49c;
+    stroke: #222;
+    cursor:pointer;
+
 }
 
 @media screen and (max-width: 1300px) {
